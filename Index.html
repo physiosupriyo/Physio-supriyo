@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Physio Supriyo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ================= GLOBAL ================= */
+body{
+margin:0;
+font-family:'Montserrat',sans-serif;
+background:#f4f8fc;
+color:#222;
+}
+
+h1,h2,h3{
+font-family:'Playfair Display',serif;
+}
+
+/* ================= HEADER ================= */
+.header{
+background:linear-gradient(135deg,#0a66c2,#081d3c);
+color:white;
+text-align:center;
+padding:50px 15px 120px;
+position:relative;
+}
+
+.corner-logo{
+position:absolute;
+top:15px;
+left:15px;
+width:55px;
+height:55px;
+border-radius:50%;
+background:white;
+padding:4px;
+}
+
+.btn{
+padding:10px 18px;
+border:none;
+border-radius:25px;
+margin:5px;
+cursor:pointer;
+transition:0.3s;
+font-weight:600;
+}
+.btn:hover{transform:scale(1.06);}
+.white{background:white;color:#0a66c2;}
+.red{background:#ff0000;color:white;}
+.blue{background:#1877F2;color:white;}
+.green{background:#25D366;color:white;}
+
+/* ================= PROFILE ================= */
+.profile{
+display:flex;
+justify-content:center;
+margin-top:-85px;
+}
+.profile img{
+width:170px;
+height:170px;
+border-radius:50%;
+border:6px solid white;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+object-fit:cover;
+}
+
+/* ================= SECTIONS ================= */
+.section{
+padding:50px 20px;
+text-align:center;
+}
+
+.light{background:#eaf2fb;}
+
+.card{
+background:white;
+max-width:900px;
+margin:15px auto;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+line-height:1.7;
+}
+
+/* ================= COUNTER ================= */
+.counter-wrapper{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.counter-box{
+background:white;
+padding:25px;
+border-radius:18px;
+min-width:220px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.counter{
+font-size:32px;
+color:#0a66c2;
+font-weight:bold;
+}
+
+/* ================= SLIDERS ================= */
+.slider-track{
+display:flex;
+gap:15px;
+}
+
+.treatment-card{
+min-width:260px;
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.treatment-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.treatment-card p{
+padding:12px;
+}
+
+/* ================= VIDEO ================= */
+.video-track{
+display:flex;
+gap:15px;
+overflow:hidden;
+}
+
+.video-track video{
+width:160px;
+height:200px;
+border-radius:14px;
+object-fit:cover;
+flex-shrink:0;
+}
+
+/* ================= FORM ================= */
+input,textarea{
+width:100%;
+padding:12px;
+margin:8px 0;
+border-radius:10px;
+border:1px solid #ddd;
+}
+
+/* ================= MAP ================= */
+iframe{
+border-radius:12px;
+}
+
+/* ================= WHATSAPP ================= */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:14px 16px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+}
+
+/* ================= FOOTER ================= */
+.footer{
+background:#081d3c;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+.social-icons{
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:15px;
+}
+
+.social-icons a{
+width:55px;
+height:55px;
+border-radius:50%;
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+text-decoration:none;
+color:#081d3c;
+}
+
+/* ================= OPEN CLOSE ================= */
+#status{
+font-weight:bold;
+font-size:18px;
+margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+<img src="logo1.png" class="corner-logo">
+
+<h1>Physio Supriyo</h1>
+<p>Best Physiotherapist in Newtown & Rajarhat, Kolkata</p>
+
+<div>
+<a href="https://wa.me/919038296618"><button class="btn white">Book Consultation</button></a>
+<a href="https://www.youtube.com/@physiosupriyo9539"><button class="btn red">YouTube</button></a>
+<a href="https://www.facebook.com/share/1Qq8NfhoWH/"><button class="btn blue">Facebook</button></a>
+</div>
+</div>
+
+<!-- PROFILE -->
+<div class="profile">
+<img src="supriyo.jpg">
+</div>
+
+<!-- COUNTERS -->
+<div class="section light">
+<div class="counter-wrapper">
+
+<div class="counter-box">
+<h2 class="counter" data-target="2000">0</h2>
+<p>Happy Patients</p>
+</div>
+
+<div class="counter-box">
+<h2 class="counter" data-target="500">0</h2>
+<p>Patient Reviews</p>
+</div>
+
+<div class="counter-box">
+<h2>★★★★★</h2>
+<p>5 Star Rating</p>
+</div>
+
+</div>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+<div class="card">
+<h2>About</h2>
+Hi! I'm Supriyo Chatterjee, a professional physiotherapist leading a dedicated rehab team.
+</div>
+</div>
+
+<!-- PROFESSIONAL -->
+<div class="section light">
+<div class="card">
+<h2>Professional Background</h2>
+Advanced physiotherapy, sports rehab, spinal care, dry needling, posture correction, neurological rehab.
+</div>
+</div>
+
+<!-- WHY -->
+<div class="section">
+<div class="card">
+<h2>Why Choose Us</h2>
+Quality treatment, drug-free therapy, personalized rehab programs and modern physiotherapy techniques.
+</div>
+</div>
+
+<!-- SPECIAL CARE -->
+<div class="section light">
+<div class="card">
+<h2>Special Care For</h2>
+Stroke, Parkinson’s, Arthritis, Frozen Shoulder, Back Pain, Sports Injury.
+</div>
+</div>
+
+<!-- RABINDRA -->
+<div class="section">
+<div class="card">
+<h2>Rabindra Jayanti</h2>
+Tribute to Rabindranath Tagore.
+</div>
+</div>
+
+<!-- HEALTH CAMP -->
+<div class="section light">
+<div class="card">
+<h2>Free Physiotherapy Health Camp</h2>
+We organize free physiotherapy camps in apartments and communities.
+</div>
+</div>
+
+<!-- PATIENT REVIEWS -->
+<div class="section">
+<div class="card">
+<h2>Patient Reviews</h2>
+⭐⭐⭐⭐⭐ Real recovery experiences from patients.
+</div>
+</div>
+
+<!-- TREATMENTS -->
+<div class="section light">
+<h2>Previous Treatments</h2>
+
+<div class="slider-track" id="photoTrack">
+<div class="treatment-card"><img src="img1.jpg"><p>Bell’s Palsy</p></div>
+<div class="treatment-card"><img src="img2.jpg"><p>Workshop</p></div>
+<div class="treatment-card"><img src="img3.jpg"><p>Back Pain</p></div>
+<div class="treatment-card"><img src="img4.jpg"><p>Stroke Rehab</p></div>
+</div>
+</div>
+
+<!-- ACTIVITIES -->
+<div class="section">
+<h2>Our Activities</h2>
+<div class="video-track" id="videoTrack">
+<video src="video1.mp4" controls></video>
+<video src="video2.mp4" controls></video>
+<video src="video3.mp4" controls></video>
+</div>
+</div>
+
+<!-- BOOK -->
+<div class="section light">
+<div class="card">
+<h2>Book Appointment</h2>
+<form action="https://formsubmit.co/supriyochatterjee77@gmail.com" method="POST">
+<input type="text" placeholder="Name" required>
+<input type="tel" placeholder="Phone" required>
+<textarea placeholder="Problem"></textarea>
+<button class="btn green">Submit</button>
+</form>
+</div>
+</div>
+
+<!-- LOCATION -->
+<div class="section">
+<div class="card">
+<h2>Our Location</h2>
+<iframe width="100%" height="250"
+src="https://maps.google.com/maps?q=Newtown%20Kolkata&output=embed"></iframe>
+</div>
+</div>
+
+<!-- AVAILABILITY -->
+<div class="section light">
+<div class="card">
+<h2>Availability</h2>
+<p>Mon–Sat: 9 AM – 8 PM</p>
+<p>Sunday: Emergency Only</p>
+<h3 id="status"></h3>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+
+<h2>Connect With Us</h2>
+
+<div class="social-icons">
+<a href="https://www.facebook.com/share/1Qq8NfhoWH/"><i class="fab fa-facebook-f"></i></a>
+<a href="https://www.youtube.com/@physiosupriyo9539"><i class="fab fa-youtube"></i></a>
+<a href="https://www.google.com"><i class="fab fa-google"></i></a>
+</div>
+
+<p>© 2026 Physio Supriyo</p>
+</div>
+
+<a class="whatsapp-float" href="https://wa.me/919038296618">WhatsApp</a>
+
+<script>
+
+/* COUNTER */
+document.querySelectorAll(".counter").forEach(counter=>{
+let target = +counter.dataset.target;
+let count = 0;
+
+function run(){
+count += target/100;
+if(count < target){
+counter.innerText = Math.floor(count);
+requestAnimationFrame(run);
+}else{
+counter.innerText = target+"+";
+}
+}
+run();
+});
+
+/* PHOTO SCROLL */
+let pTrack = document.getElementById("photoTrack");
+pTrack.innerHTML += pTrack.innerHTML;
+
+let p=0;
+function moveP(){
+p += 0.5;
+if(p >= pTrack.scrollWidth/2) p=0;
+pTrack.style.transform = `translateX(-${p}px)`;
+requestAnimationFrame(moveP);
+}
+moveP();
+
+/* VIDEO SCROLL */
+let vTrack = document.getElementById("videoTrack");
+vTrack.innerHTML += vTrack.innerHTML;
+
+let v=0;
+function moveV(){
+v += 0.4;
+if(v >= vTrack.scrollWidth/2) v=0;
+vTrack.style.transform = `translateX(-${v}px)`;
+requestAnimationFrame(moveV);
+}
+moveV();
+
+/* OPEN CLOSE */
+function checkStatus(){
+let d=new Date().getDay();
+let h=new Date().getHours();
+let s=document.getElementById("status");
+
+if(d>=1 && d<=6 && h>=9 && h<20){
+s.innerHTML="🟢 Open Now";
+}else{
+s.innerHTML="🔴 Closed Now";
+}
+}
+checkStatus();
+
+</script>
+
+</body>
+  </html>
