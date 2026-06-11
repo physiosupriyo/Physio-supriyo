@@ -384,9 +384,11 @@ src="https://maps.google.com/maps?q=Newtown%20Kolkata&output=embed"></iframe>
 
 <a class="whatsapp-float" href="https://wa.me/919038296618">WhatsApp</a>
 
-<script>
+<<script>
 
-/* COUNTER */
+window.onload = function(){
+
+// COUNTER SAFE
 document.querySelectorAll(".counter").forEach(counter=>{
 let target = +counter.dataset.target;
 let count = 0;
@@ -403,45 +405,50 @@ counter.innerText = target+"+";
 run();
 });
 
-/* PHOTO SCROLL */
+// PHOTO SLIDER SAFE
 let pTrack = document.getElementById("photoTrack");
+if(pTrack){
 pTrack.innerHTML += pTrack.innerHTML;
 
-let p=0;
+let p = 0;
 function moveP(){
 p += 0.5;
-if(p >= pTrack.scrollWidth/2) p=0;
+if(p >= pTrack.scrollWidth/2) p = 0;
 pTrack.style.transform = `translateX(-${p}px)`;
 requestAnimationFrame(moveP);
 }
 moveP();
+}
 
-/* VIDEO SCROLL */
+// VIDEO SLIDER SAFE
 let vTrack = document.getElementById("videoTrack");
+if(vTrack){
 vTrack.innerHTML += vTrack.innerHTML;
 
-let v=0;
+let v = 0;
 function moveV(){
 v += 0.4;
-if(v >= vTrack.scrollWidth/2) v=0;
+if(v >= vTrack.scrollWidth/2) v = 0;
 vTrack.style.transform = `translateX(-${v}px)`;
 requestAnimationFrame(moveV);
 }
 moveV();
+}
 
-/* OPEN CLOSE */
-function checkStatus(){
-let d=new Date().getDay();
-let h=new Date().getHours();
-let s=document.getElementById("status");
+// OPEN/CLOSE STATUS SAFE
+let s = document.getElementById("status");
+if(s){
+let d = new Date().getDay();
+let h = new Date().getHours();
 
-if(d>=1 && d<=6 && h>=9 && h<20){
-s.innerHTML="🟢 Open Now";
+if(d >= 1 && d <= 6 && h >= 9 && h < 20){
+s.innerHTML = "🟢 Open Now";
 }else{
-s.innerHTML="🔴 Closed Now";
+s.innerHTML = "🔴 Closed Now";
 }
 }
-checkStatus();
+
+}
 
 </script>
 
